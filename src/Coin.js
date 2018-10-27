@@ -4,8 +4,8 @@ class Coin extends Component {
   render() {
   	return (
   		<div>
-	  		<div>Bitcoin</div>
-	  		<div>$6.430</div>
+	  		<div>{this.props.name}</div>
+	  		<div>${this.props.avg_price}</div>
 	  	</div>	
   	);
   }
