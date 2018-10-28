@@ -11,4 +11,4 @@
 
 This will start a react app in port 3000
 
-go to `http://localhost:3000` to see the app running
+Navigate to `http://localhost:3000` to see the app running
