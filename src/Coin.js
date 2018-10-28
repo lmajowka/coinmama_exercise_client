@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { Route, Link } from "react-router-dom";
+import capitalize from './utils';
 
 class Coin extends Component {
 
   render() {
 
   	let path = `/coin/${this.props.name}`;
-  	let	coinName = this.capitalize(this.props.name)
+  	let	coinName = capitalize(this.props.name)
 
   	return (
   		<div className="coin">
@@ -16,10 +17,6 @@ class Coin extends Component {
 		  	</Link>	
 		</div>
   	);
-  }
-
-  capitalize(name){
-  	return name.charAt(0).toUpperCase() + name.slice(1)
   }
 
 }
